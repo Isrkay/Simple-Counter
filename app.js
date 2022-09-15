@@ -13,6 +13,16 @@ btns.forEach(function (btn) {
       if(styles.contains ('decrease')){
         count --;
       }
+      else if (styles.contains ('increase')){
+        count ++;
+      }
+      else{
+        count === 0;
+      }
+      if ( count > 0){
+        value.styles.color = green
+      }
+      if
       value.textContent = count
     });
 });
