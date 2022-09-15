@@ -2,3 +2,14 @@ main{
     margin-top: 40vh;
     margin-left: 75vh;
 }
+h1{
+    margin-left: 9vh;
+}
+#value{
+    font-size: 50px;
+    margin-left: 14vh;
+}
+.button-container{
+    margin-top: 20px;
+    
+}
