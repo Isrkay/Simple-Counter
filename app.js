@@ -3,26 +3,31 @@ let count = 0
 
 // Set value and button
 
-const value = document.querySelector('#value');
-const btns = document.querySelectorAll('.btn');
+const value = document.querySelector("#value");
+const btns = document.querySelectorAll(".btn");
 
 
 btns.forEach(function (btn) {
-    btn.addEventListener(click, function(e){
+    btn.addEventListener("click", function(e){
       const styles = e.currentTarget.classList;
-      if(styles.contains ('decrease')){
-        count --;
+      if(styles.contains ("decrease")){
+        count--;
       }
-      else if (styles.contains ('increase')){
-        count ++;
+      else if (styles.contains ("increase")){
+        count++;
       }
       else{
-        count === 0;
+        count = 0;
       }
       if ( count > 0){
-        value.styles.color = green
+        value.style.color = "green"
       }
-      if
+      if ( count < 0){
+        value.style.color = "red"
+      }
+      if ( count === 0){
+        value.style.color = "black"
+      }
       value.textContent = count
     });
 });
